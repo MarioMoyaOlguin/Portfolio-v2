@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    body {
+        @apply bg-slate-400
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .font-script {
+        font-family: 'Dancing Script', cursive;
+    }
+    .serif-pro {
+        font-family: 'Source Serif Pro', serif;
+    }
+    .spartan {
+        font-family: 'League Spartan', sans-serif;
+    }
+
+    .ts {
+        text-shadow: 1px 1px 6px rgba(61,61,61, 0.7);
+        text-shadow: 1px 1px 2px rgba(61,61,61, 1);
+    }
+    .contact-input {
+        @apply py-1 px-2 placeholder:text-xl font-light w-full !appearance-none outline-none h-9 border-b-2 border-slate-500
+        focus:border-orange-500 transition-colors ease-in-out serif-pro
+    }
+
+    .box {
+        --a: 50px; /* the size of the triangle */
+        --g: 0px; /* the gap */
+    }
+    .top-container-lg {
+        clip-path: polygon(0 0,100% 0,100% calc(100% - var(--a)),calc(50% + 154px) calc(100% - var(--a)),calc(50% + 104px) 100%,calc(50% + 54px) calc(100% - var(--a)),0 calc(100% - var(--a)))
+    }
+    .bottom-container-lg {
+        margin-top: calc(var(--g) - var(--a));
+        clip-path: polygon(0 0,calc(50% + 54px - .414*var(--g)) 0,calc(50% + 104px) calc(var(--a) + .414*var(--g)),calc((50% + 154px) + .414*var(--g)) 0,100% 0,100% 100%, 0 100%);
+    }
+    .top-container {
+        clip-path: polygon(0 0,100% 0,100% calc(100% - var(--a)),calc(50% + var(--a)) calc(100% - var(--a)),50% 100%,calc(50% - var(--a)) calc(100% - var(--a)),0 calc(100% - var(--a)))
+    }
+    .bottom-container {
+        margin-top: calc(var(--g) - var(--a));
+        clip-path: polygon(0 0,calc(50% - var(--a) - .414*var(--g)) 0,50% calc(var(--a) + .414*var(--g)),calc(50% + var(--a) + .414*var(--g)) 0,100% 0,100% 100%, 0 100%);
+    }
+
+    .bg-card {
+        /* background: radial-gradient(circle, rgba(66, 23, 105, 0.322) 0%, rgba(66, 23, 105, 0.322) 55%, rgb(3, 107, 59) 56%, rgba(3, 107, 59) 100%);
+        background-size: 2000%; */
+        /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+        /* background: linear-gradient(90deg, rgba(124, 58, 237, 1) 0%, rgba(124, 58, 237, 1) 15%, rgba(124, 58, 237, 0.1) 15%, rgba(124, 58, 237, 0.1) 100%); */
+    }
+
+    /* Animations */
+    .bg-1 {
+        background-image: conic-gradient( #5ddcff, #3c67e3, #FF7B4B, #4e00c2, #5ddcff, #3c67e3, #FF7B4B, #5ddcff );
+    }
+    .bg-dark {
+        background: linear-gradient(-60deg, #8f152e, #7f54a2, #44acee, #6268c7, #db6dff, #2e2c6b, #db6dff, #8f152e);
+    }
+    .bg-scale {
+        background-size: 200% 100%;
+    }
+}
