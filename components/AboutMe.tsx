@@ -9,15 +9,15 @@ const AboutMe = () => {
   
   const [loading, setLoading] = useState(true)
 
-  const background = dark ? "bg-slate-900/70 " : "text-slate-900 bg-white/80";
+  const background = dark ? "bg-slate-900/90 " : "text-slate-900 bg-white/95";
   const chevron = dark ? 'bg-slate-900 text-white' : 'bg-white text-slate-900';
   const position = loading ? '' : 'animate-slide-text';
   const delayedPosition = loading ? '' : 'animate-slide-text-delayd';
   const cardBg = dark ? 'bg-violet-600/20' : 'bg-violet-900/70';
 
 
-  const handleScrollToResume = () => {
-    const resume = document.getElementById('resume');
+  const handleScrollToProjects = () => {
+    const resume = document.getElementById('projects');
     resume?.scrollIntoView();
   }
 
@@ -26,8 +26,6 @@ const AboutMe = () => {
   }, [])
 
   return (
-
-    
       (loading)
 
         ? <div className='w-screen h-screen flex relative bg-slate-900 justify-center items-center'>
@@ -50,7 +48,7 @@ const AboutMe = () => {
               />
             </div> */}
     
-            <div className={`relative flex flex-col w-screen text-center p-4 sm:p-8 rounded-lg justify-center items-center outline outline-1 outline-offset-[-10px]
+            <div className={`relative flex flex-col w-screen text-center p-4 sm:p-8 rounded-2xl justify-center items-center outline outline-1 outline-offset-[-10px]
             outline-yellow-600 bg-[url('https://cdn.pixabay.com/photo/2022/06/20/14/20/space-7273891_960_720.jpg')] bg-cover shadow-md shadow-black/30
             lg:w-fit max-w-[420px] md:max-w-[600px] backdrop-blur-sm `}>
       
@@ -84,7 +82,7 @@ const AboutMe = () => {
               {/* Go down */}
               <div className={`w-16 h-16 mx-auto overflow-hidden relative transition-all ease-in-out rounded-full hover:animate-none
               cursor-pointer group mt-2 scale-[.8] shadow sm:scale-100 ${chevron} shadow shadow-black`}
-              onClick={ handleScrollToResume } >
+              onClick={ handleScrollToProjects } >
                 <div className='w-16 absolute group-hover:animate-slide-chevron transition-transform ease-linear -translate-y-16'>
                   <div className='w-16 h-16 flex justify-center items-center'>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">

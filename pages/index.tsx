@@ -28,7 +28,7 @@ const Home: NextPage = () => {
 
       <Head>
         <title>Mario Moya, freelance front-end web developer</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="favicon.ico" />
       </Head>
           
       <main className="w-full relative overflow-hidden spartan antialiased mx-auto max-w-[1920px] bg-slate-900">

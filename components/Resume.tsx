@@ -34,7 +34,7 @@ const Resume = () => {
             year="Now"
             college=""
             degree="Freelance Front End Web Development"
-            details="For the last one and a halve year I've been developing my web programming skills, dabbling in react and angular, polishing my skills with different
+            details="For the last one and a half year I've been developing my web programming skills, dabbling in react and angular, polishing my skills with different
               projects among which includes a surveys app, finding out in the process that writting code is quite gratifying for me and that overall
               I´m passionate for web development."
             // projects="See my progress"

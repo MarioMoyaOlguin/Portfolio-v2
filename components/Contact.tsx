@@ -52,7 +52,7 @@ const Contact = () => {
           </form>
 
           {/* go top */}
-          <div className='w-12 h-12 mt-8 mx-auto overflow-hidden relative bg-slate-600 hover:bg-sky-700 transition-colors ease-in-out'
+          <div className='w-12 h-12 mt-8 mx-auto relative bg-slate-600 hover:bg-sky-700 transition-colors ease-in-out rounded-full overflow-hidden'
           onClick={handleScrollTop}>
             <div className='w-12 absolute hover:animate-slide-up-chevron transition-all ease-linear'>
               <div className='w-12 h-12 flex justify-center items-center'>
@@ -90,7 +90,7 @@ const Contact = () => {
             </a>
           </div>
 
-          <p className={`text-center mt-4 font-mono ` + (dark ? "text-slate-500" : "text-slate-900")}>MARIO MOYA <span>2022</span></p>
+          <p className={`text-center mt-4 font-mono ` + (dark ? "text-slate-500" : "text-slate-900")}>MARIO MOYA <span>2024</span></p>
         </div>
 
     </div>

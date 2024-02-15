@@ -32,7 +32,7 @@ const NavLinks = ( {scrollTop, scrollResume, scrollProjects, scrollContact, menu
 
   return (
     <>
-        <div className='group flex cursor-pointer w-full'>
+        <div className='group flex'>
             <div className='relative'>
                 <span className='opacity-0 group-hover:opacity-100 transition ease-in-out -translate-x-8 absolute group-hover:-translate-x-4'>&lt;</span>
             </div>
@@ -41,16 +41,7 @@ const NavLinks = ( {scrollTop, scrollResume, scrollProjects, scrollContact, menu
                 <span className='opacity-0 group-hover:opacity-100 transition ease-in-out translate-x-8 absolute group-hover:translate-x-2'>/&gt;</span>
             </div>
         </div>
-        <div className='group flex cursor-pointer w-full'>
-            <div className='relative'>
-                <span className='opacity-0 group-hover:opacity-100 transition ease-in-out -translate-x-8 absolute group-hover:-translate-x-4'>&lt;</span>
-            </div>
-            <div onClick={handleScrollResume} >Resume</div>
-            <div className='relative'>
-                <span className='opacity-0 group-hover:opacity-100 transition ease-in-out translate-x-8 absolute group-hover:translate-x-2'>/&gt;</span>
-            </div>
-        </div>
-        <div className='group flex cursor-pointer w-full'>
+        <div className='group flex'>
             <div className='relative'>
                 <span className='opacity-0 group-hover:opacity-100 transition ease-in-out -translate-x-8 absolute group-hover:-translate-x-4'>&lt;</span>
             </div>
@@ -59,7 +50,16 @@ const NavLinks = ( {scrollTop, scrollResume, scrollProjects, scrollContact, menu
                 <span className='opacity-0 group-hover:opacity-100 transition ease-in-out translate-x-8 absolute group-hover:translate-x-2'>/&gt;</span>
             </div>
         </div>
-        <div className='group flex cursor-pointer w-full'>
+        <div className='group flex'>
+            <div className='relative'>
+                <span className='opacity-0 group-hover:opacity-100 transition ease-in-out -translate-x-8 absolute group-hover:-translate-x-4'>&lt;</span>
+            </div>
+            <div onClick={handleScrollResume} >Resume</div>
+            <div className='relative'>
+                <span className='opacity-0 group-hover:opacity-100 transition ease-in-out translate-x-8 absolute group-hover:translate-x-2'>/&gt;</span>
+            </div>
+        </div>
+        <div className='group flex'>
             <div className='relative'>
                 <span className='opacity-0 group-hover:opacity-100 transition ease-in-out -translate-x-8 absolute group-hover:-translate-x-4'>&lt;</span>
             </div>

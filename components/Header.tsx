@@ -82,7 +82,7 @@ const Header = () => {
 
         <div className="flex lg:flex-col relative h-full items-center justify-between py-1 px-6 text-white  backdrop-blur
         lg:justify-start lg:items-center lg:p-5 overflow-scroll scrollbar-thin scrollbar-thumb-orange-700 scrollbar-track-red-300
-        bg-[rgba(145,13,13,.8)] shadow-md">
+        bg-[rgba(145,13,13,.8)]">
 
             {/* Portrait */}
             <div className=' sm:h-32 hidden lg:block'>
@@ -106,8 +106,8 @@ const Header = () => {
             <div className='font-extralight text-xl hidden lg:flex flex-col mt-7'>
                 <NavLinks
                     scrollTop={handleScrollTop}
-                    scrollResume={handleScrollResume}
                     scrollProjects={handleScrollProjects}
+                    scrollResume={handleScrollResume}
                     scrollContact={handleScrollContact}
                 />
             </div>
@@ -139,8 +139,8 @@ const Header = () => {
         >
             <NavLinks
                 scrollTop={handleScrollTop}
-                scrollResume={handleScrollResume}
                 scrollProjects={handleScrollProjects}
+                scrollResume={handleScrollResume}
                 scrollContact={handleScrollContact}
                 menuOpened={handleMenu}
             />

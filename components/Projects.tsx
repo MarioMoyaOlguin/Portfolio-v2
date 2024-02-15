@@ -12,14 +12,14 @@ const Projects = () => {
     const bg = dark ? 'bg-slate-800/90' : 'bg-gray-200/90';
     const title = dark ? 'text-white' : 'text-slate-900';
     const bar = dark ? 'bg-orange-500' : 'bg-red-800';
-    const degreeText = dark ? 'text-orange-300' : 'text-orange-800';
+    // const degreeText = dark ? 'text-orange-300' : 'text-orange-800';
 
   return (
 
     <div id='projects' className={`w-full backdrop-blur-lg ${bg}`}>
 
-        <div className='px-6 pt-16 pb-20 sm:px-8 lg:pt-32 lg:pb-32 lg:ml-52'>
-            <div className='mb-14'>
+        <div className='px-6 pt-16 pb-20 sm:px-8 lg:pt- lg:pb-32 lg:ml-52'>
+            <div className='mb-16'>
                 <h2 className={`fade sec-animation -translate-y-4 opacity-0 text-5xl mb-1 mx-auto w-fit  serif-pro ${title} text-shadow-sm` }>PROJECTS</h2>
                 <div className={`bar transition-all duration-700 h-1 w-0 mx-auto rounded-full ${bar} `}></div>
             </div>
